@@ -16,7 +16,7 @@ html {
   font-size: 62.5%;
 }
 
-body {
+main {
   font-family: "Figtree", sans-serif;
   font-weight: 400;
   display: flex;
@@ -107,7 +107,7 @@ body {
 
 /* Media Queries */
 @media (max-width: 500px) {
-  body {
+  main {
     padding: 1.6rem;
   }
   .card {
