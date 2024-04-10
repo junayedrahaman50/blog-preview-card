@@ -1,0 +1,117 @@
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* equivalent to 10px */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--yellow);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 38.4rem;
+  height: 52.2rem;
+  padding: 2.24rem;
+  background-color: var(--white);
+  border-radius: 1.84rem;
+  border: 1px solid var(--black);
+  box-shadow: 0.8rem 0.8rem var(--black);
+  transition: box-shadow 0.3s ease;
+}
+
+.card.active {
+  box-shadow: 1.6rem 1.6rem var(--black);
+}
+
+.card-img {
+  border-radius: 1rem;
+}
+
+.card-label {
+  align-self: flex-start;
+  background-color: var(--yellow);
+  color: var(--black);
+  margin-top: 2.4rem;
+  padding: 0.48rem 1.28rem;
+  font-size: 1.44rem;
+  border-radius: 0.48rem;
+  font-weight: 800;
+  letter-spacing: -0.16px;
+}
+
+.card-date {
+  color: var(--black);
+  margin-top: 1.28rem;
+  font-size: 1.4rem;
+}
+
+.card-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-top: 1.6rem;
+  color: var(--black);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.card-title:hover {
+  color: var(--yellow);
+}
+
+.card-text {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-top: 1.6rem;
+  color: var(--grey);
+  letter-spacing: 0.16px;
+}
+
+.card .avatar {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 2.4rem;
+  align-items: center;
+}
+
+.card .avatar-img {
+  width: 3.3rem;
+  height: 3.3rem;
+}
+
+.card .avatar-name {
+  color: var(--black);
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+/* Media Queries */
+@media (max-width: 500px) {
+  /* html {
+    font-size: 56.25%;
+  } */
+  .card {
+    width: 90%;
+    height: auto;
+  }
+}
