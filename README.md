@@ -28,7 +28,7 @@ This is the desktop version of the component. I didn't upload the mobile version
 
 ## My process
 
-I have built the layout using flexbox. There are 2 flex containers, body and card where body takes the full width of the viewport and card has fixed width and height based on the desktop design. I have added media queries to make the component responsive. Additionally, I have added external javascript file to change the box-shadow property on card element.
+I have built the layout using flexbox. There are 2 flex containers, main and card where main element takes the full height of the viewport and card has fixed width and height based on the desktop design. I have added media queries to make the component responsive. Additionally, I have added external javascript file to change the box-shadow property on card element.
 
 ### Built with
 
