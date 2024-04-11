@@ -107,11 +107,8 @@ main {
 
 /* Media Queries */
 @media (max-width: 500px) {
-  main {
-    padding: 1.6rem;
-  }
   .card {
-    width: 100%;
+    width: 90%;
     height: auto;
   }
 }
