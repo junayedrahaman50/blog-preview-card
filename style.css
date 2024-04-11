@@ -18,7 +18,7 @@ html {
 
 main {
   font-family: "Figtree", sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -80,7 +80,6 @@ main {
 
 .card-text {
   font-size: 1.6rem;
-  font-weight: 300;
   line-height: 1.5;
   margin-top: 1.6rem;
   color: var(--grey);
